@@ -11,8 +11,8 @@ class Settings(BaseSettings):
     JWT_ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 120
     DATABASE_URL: str = "sqlite:///./forestguard.db"
-    DEFAULT_ADMIN_EMAIL: str = "admin@gore-md.gob.pe"
-    DEFAULT_ADMIN_PASSWORD: str = "adminforestguard"
+    DEFAULT_ADMIN_EMAIL: str = "dcastellon@unamad.edu.pe"
+    DEFAULT_ADMIN_PASSWORD: str = "admin"
 
     model_config = SettingsConfigDict(
         env_file=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), ".env"),
