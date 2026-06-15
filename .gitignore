@@ -1,0 +1,31 @@
+# Root .gitignore for ForestGuard AI
+
+# Databases
+forestguard.db
+*.db
+*.sqlite3
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Sub-project dependency directories
+**/node_modules/
+**/venv/
+**/env/
+**/dist/
+**/__pycache__/
+**/*.py[cod]
+
+# Cache directories
+**/app/.cache/
+
+# IDE settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

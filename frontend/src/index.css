@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-primary: #9fe870;
+  --color-primary-hover: #cdffad;
+  --color-primary-neutral: #c5edab;
+  --color-primary-pale: #e2f6d5;
+  
+  --color-canvas: #ffffff;
+  --color-canvas-soft: #e8ebe6;
+  
+  --color-ink: #0e0f0c;
+  --color-ink-deep: #163300;
+  --color-body: #454745;
+  --color-mute: #868685;
+  
+  --color-positive: #2ead4b;
+  --color-positive-deep: #054d28;
+  --color-warning: #ffd11a;
+  --color-warning-deep: #b86700;
+  --color-warning-content: #4a3b1c;
+  --color-negative: #d03238;
+  --color-negative-deep: #a72027;
+  --color-negative-darkest: #a7000d;
+  --color-negative-bg: #320707;
+  
+  --radius-xl: 24px;
+  --font-sans: "Inter", "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Estilos de transición suaves y animaciones de fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
